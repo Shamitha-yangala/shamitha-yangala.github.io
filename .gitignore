@@ -1,0 +1,7 @@
+# Ignore temporary, backup, and unrelated files
+get-pip.py
+job_suggestions_16_agust
+portfolio_v0/
+.vscode/
+.idea/
+*.log

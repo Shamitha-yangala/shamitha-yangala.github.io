@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shamitha Yangala | Python Backend Developer</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Portfolio of Shamitha Yangala - Python Backend Developer with 2.9+ years experience specializing in Django, DRF, GeoDjango, GIS Systems, and AI/RAG integrations." />
+  <meta name="keywords"
+    content="Shamitha Yangala, Python Developer, Django Backend, GeoDjango, PostGIS, GIS, REST API, Portfolio, Hyderabad" />
+  <meta name="author" content="Shamitha Yangala" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Shamitha Yangala | Python Backend Developer" />
+  <meta property="og:description"
+    content="2.9+ years delivering production-grade Django, GIS, and AI systems with measurable impact." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Interactive Background Canvas -->
+  <canvas id="bg-canvas" class="bg-canvas"></canvas>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="ambient-blob blob-purple"></div>
+  <div class="ambient-blob blob-cyan"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">SY</span>
+        <span class="logo-slash">/</span>
+        <span class="logo-bracket">&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Mobile navigation">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header">
+          <a href="#hero" class="brand-logo sidebar-brand" aria-label="Home">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-name">SY</span>
+            <span class="logo-slash">/</span>
+            <span class="logo-bracket">&gt;</span>
+          </a>
+          <button class="sidebar-close" id="sidebar-close" aria-label="Close navigation menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Nav Links -->
+        <ul class="nav-list">
+          <li><a href="#hero"      class="nav-link active"><i class="fa-solid fa-house"></i>      <span>Home</span></a></li>
+          <li><a href="#about"     class="nav-link"><i class="fa-solid fa-user"></i>              <span>About</span></a></li>
+          <li><a href="#skills"    class="nav-link"><i class="fa-solid fa-code"></i>              <span>Skills</span></a></li>
+          <li><a href="#projects"  class="nav-link"><i class="fa-solid fa-diagram-project"></i>  <span>Projects</span></a></li>
+          <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i>       <span>Experience</span></a></li>
+          <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i>   <span>Education</span></a></li>
+          <li><a href="#contact"   class="nav-link"><i class="fa-solid fa-paper-plane"></i>      <span>Contact</span></a></li>
+        </ul>
+
+        <!-- Sidebar Footer -->
+        <div class="sidebar-footer">
+          <div class="sidebar-socials">
+            <a href="https://github.com/Shamitha-yangala" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="sidebar-social-btn"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/shamitha-yangala" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="sidebar-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:shamitharaj64@gmail.com" aria-label="Email" class="sidebar-social-btn"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          <a href="Shamitha_Yangala_Python_Developer_Resume_2026.pdf" download class="btn btn-sm btn-primary w-full sidebar-cv-btn">
+            <i class="fa-solid fa-file-arrow-down"></i> Download CV
+          </a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Shamitha-yangala" target="_blank" rel="noopener noreferrer"
+          class="btn btn-sm btn-glass" aria-label="GitHub Profile">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="Shamitha_Yangala_Python_Developer_Resume_2026.pdf" download="Shamitha_Yangala_Resume.pdf"
+          class="btn btn-sm btn-outline" id="resume-download-btn">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Backdrop Overlay -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill hero-badge">
+            <span class="pulsing-dot"></span>
+            <span>Available for New Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Shamitha Yangala</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">&gt; </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-desc">
+            Python Backend Developer with <strong>2.9+ years</strong> engineering production-grade
+            <strong>Django</strong>, <strong>DRF</strong>, <strong>GeoDjango/GIS</strong>, and <strong>AI/RAG</strong>
+            systems. Specializing in high-throughput workflows, scalable database architectures, and high-record
+            enterprise platforms.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-code"></i>
+              <span>View Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-glass">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Let's Talk</span>
+            </a>
+            <a href="Shamitha_Yangala_Python_Developer_Resume_2026.pdf" target="_blank" class="btn btn-secondary">
+              <i class="fa-regular fa-file-pdf"></i>
+              <span>View CV</span>
+            </a>
+          </div>
+
+          <div class="hero-social-links">
+            <a href="https://github.com/Shamitha-yangala" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/shamitha-yangala" target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:shamitharaj64@gmail.com" class="social-icon" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+917989478399" class="social-icon" aria-label="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <span class="location-badge">
+              <i class="fa-solid fa-location-dot"></i> Hyderabad, India
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-terminal-card" data-tilt>
+            <div class="terminal-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">shamitha_profile.py</span>
+              <span class="terminal-lang">Python 3.11</span>
+            </div>
+            <div class="terminal-body">
+              <pre><code><span class="code-keyword">class</span> <span class="code-class">BackendDeveloper</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-str">"Shamitha Yangala"</span>
+        <span class="code-param">self</span>.experience_years = <span class="code-num">2.9</span>
+        <span class="code-param">self</span>.core_stack = [
+            <span class="code-str">"Python"</span>, <span class="code-str">"Django"</span>, <span class="code-str">"DRF"</span>,
+            <span class="code-str">"PostgreSQL"</span>, <span class="code-str">"PostGIS"</span>, <span class="code-str">"Celery"</span>
+        ]
+        <span class="code-param">self</span>.specialties = [
+            <span class="code-str">"Django Web Applications"</span>,
+            <span class="code-str">"REST API Development"</span>,
+            <span class="code-str">"Python Backend Solutions"</span>,
+            <span class="code-str">"GIS & Spatial Infrastructure"</span>,
+            <span class="code-str">"Enterprise HR Automation"</span>,
+            <span class="code-str">"AI & RAG Integrations"</span>,  
+        ]
+        
+    <span class="code-keyword">def</span> <span class="code-func">get_status</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> {
+            <span class="code-str">"status"</span>: <span class="code-str">"Ready for high-impact backend roles"</span>,
+            <span class="code-str">"location"</span>: <span class="code-str">"Hyderabad, India"</span>,
+            <span class="code-str">"records_managed"</span>: <span class="code-str">"10,000+"</span>
+        }</code></pre>
+            </div>
+            <div class="terminal-footer">
+              <span class="badge-tag"><i class="fa-solid fa-circle-check"></i> Tests Passing 100%</span>
+              <span class="badge-tag"><i class="fa-solid fa-bolt"></i> High Performance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#metrics" class="scroll-indicator" aria-label="Scroll down">
+        <span class="mouse">
+          <span class="wheel"></span>
+        </span>
+        <i class="fa-solid fa-angles-down bounce-arrow"></i>
+      </a>
+    </section>
+
+    <!-- METRICS & KEY ACHIEVEMENTS -->
+    <section class="section metrics-section" id="metrics">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card" data-tilt>
+            <div class="metric-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            <div class="metric-number-wrapper">
+              <span class="metric-number counter" data-target="75">0</span><span class="metric-unit">%</span>
+            </div>
+            <h3 class="metric-title">HR Workload Cut</h3>
+            <p class="metric-desc">Automated 60+ letter templates from scratch for 200+ employees, replacing paper
+              workflows.</p>
+          </div>
+
+          <div class="metric-card" data-tilt>
+            <div class="metric-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <div class="metric-number-wrapper">
+              <span class="metric-number counter" data-target="70">0</span><span class="metric-unit">%</span>
+            </div>
+            <h3 class="metric-title">Faster Cost Estimation</h3>
+            <p class="metric-desc">Automated complex proposal generation workflows across 33 districts in Telangana
+              Roads GIS.</p>
+          </div>
+
+          <div class="metric-card" data-tilt>
+            <div class="metric-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="metric-number-wrapper">
+              <span class="metric-number counter" data-target="80">0</span><span class="metric-unit">%</span>
+            </div>
+            <h3 class="metric-title">User Engagement Uplift</h3>
+            <p class="metric-desc">Architected AI-powered RAG with Pinecone vector DB & AWS Polly for Centrix
+              Healthcare.</p>
+          </div>
+
+          <div class="metric-card" data-tilt>
+            <div class="metric-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="metric-number-wrapper">
+              <span class="metric-number counter" data-target="10">0</span><span class="metric-unit">k+</span>
+            </div>
+            <h3 class="metric-title">Records Governed</h3>
+            <p class="metric-desc">Engineered 4-tier RBAC, audit trails, and revision history across national
+              infrastructure systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Background</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card profile-card" data-tilt>
+            <div class="avatar-ring">
+              <div class="avatar-placeholder">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+            </div>
+            <h3 class="about-name">Shamitha Yangala</h3>
+            <p class="about-role">Python Backend & GIS Developer</p>
+            <div class="about-quick-info">
+              <div class="info-row">
+                <i class="fa-solid fa-briefcase"></i>
+                <span><strong>Experience:</strong> 2.9+ Years</span>
+              </div>
+              <div class="info-row">
+                <i class="fa-solid fa-location-dot"></i>
+                <span><strong>Location:</strong> Hyderabad, India</span>
+              </div>
+              <div class="info-row">
+                <i class="fa-solid fa-envelope"></i>
+                <span>shamitharaj64@gmail.com</span>
+              </div>
+              <div class="info-row">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 7989478399</span>
+              </div>
+            </div>
+            <div class="card-action">
+              <a href="Shamitha_Yangala_Python_Developer_Resume_2026.pdf" download
+                class="btn btn-sm btn-primary w-full">
+                <i class="fa-solid fa-download"></i> Download Full Resume
+              </a>
+            </div>
+          </div>
+
+          <div class="about-narrative">
+            <h3 class="narrative-heading">
+              Engineering Resilient Backends & Intelligent Spatial Architectures
+            </h3>
+            <p>
+              I am a results-oriented <strong>Python Backend Developer</strong> with over 2.9 years of experience
+              building enterprise web services, scalable REST APIs, and automated business platforms.
+              My expertise spans modern backend frameworks (Django, Flask, DRF), high-throughput asynchronous
+              processing (Celery, Redis), and geospatial data handling (GeoDjango, PostGIS, LeafletJS).
+            </p>
+            <p>
+              Throughout my journey at <strong>SRA OSS India</strong>, <strong>Centrix Healthcare</strong>, and
+              <strong>E-Systems AI</strong>, I have consistently driven measurable improvements: slashing manual
+              workflows
+              by 75%, accelerating API performance by 60%, and enhancing system security through robust JWT and
+              Role-Based Access Control (RBAC).
+            </p>
+
+            <div class="strengths-grid">
+              <div class="strength-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                  <h4>Enterprise Security & RBAC</h4>
+                  <p>Multi-tier role management, audit logging with Simple History, and secure token authentication.</p>
+                </div>
+              </div>
+              <div class="strength-item">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <div>
+                  <h4>GIS & Geospatial Analysis</h4>
+                  <p>Spatial querying with PostGIS, GeoDjango, QGIS, and real-time mapping via LeafletJS.</p>
+                </div>
+              </div>
+              <div class="strength-item">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                  <h4>Async Tasks & Optimization</h4>
+                  <p>Background worker pipelines with Celery and Redis for handling bulk operations and reporting.</p>
+                </div>
+              </div>
+              <div class="strength-item">
+                <i class="fa-solid fa-robot"></i>
+                <div>
+                  <h4>AI & Vector Search</h4>
+                  <p>RAG implementations, Pinecone vector stores, web scraping pipelines, and AWS Polly integration.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-microchip"></i> Capabilities</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">A comprehensive view of my technologies, databases, and architectural tools</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-categories-grid">
+          <!-- Backend & Frameworks -->
+          <div class="skill-category-card" data-tilt>
+            <div class="category-header">
+              <div class="category-icon icon-purple"><i class="fa-brands fa-python"></i></div>
+              <h3>Languages & Frameworks</h3>
+            </div>
+            <div class="skills-badges">
+              <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="tech-badge"><i class="fa-solid fa-server"></i> Django</span>
+              <span class="tech-badge"><i class="fa-solid fa-network-wired"></i> Django REST Framework</span>
+              <span class="tech-badge"><i class="fa-solid fa-flask"></i> Flask</span>
+              <span class="tech-badge"><i class="fa-solid fa-code"></i> RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- Databases & GIS -->
+          <div class="skill-category-card" data-tilt>
+            <div class="category-header">
+              <div class="category-icon icon-cyan"><i class="fa-solid fa-database"></i></div>
+              <h3>Databases & Spatial GIS</h3>
+            </div>
+            <div class="skills-badges">
+              <span class="tech-badge"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="tech-badge"><i class="fa-solid fa-map-pin"></i> PostGIS</span>
+              <span class="tech-badge"><i class="fa-solid fa-layer-group"></i> GeoDjango</span>
+              <span class="tech-badge"><i class="fa-solid fa-bolt"></i> Redis</span>
+              <span class="tech-badge"><i class="fa-solid fa-table"></i> SQLite</span>
+              <span class="tech-badge"><i class="fa-solid fa-map"></i> QGIS & LeafletJS</span>
+            </div>
+          </div>
+
+          <!-- DevOps & Asynchronous Processing -->
+          <div class="skill-category-card" data-tilt>
+            <div class="category-header">
+              <div class="category-icon icon-blue"><i class="fa-solid fa-cloud"></i></div>
+              <h3>DevOps, Cloud & Async</h3>
+            </div>
+            <div class="skills-badges">
+              <span class="tech-badge"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="tech-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="tech-badge"><i class="fa-solid fa-gears"></i> Celery (Task Queue)</span>
+              <span class="tech-badge"><i class="fa-brands fa-aws"></i> AWS Polly & EC2</span>
+              <span class="tech-badge"><i class="fa-solid fa-terminal"></i> Linux / Bash</span>
+            </div>
+          </div>
+
+          <!-- AI, Data & Security -->
+          <div class="skill-category-card" data-tilt>
+            <div class="category-header">
+              <div class="category-icon icon-emerald"><i class="fa-solid fa-shield-virus"></i></div>
+              <h3>AI, Data & Security</h3>
+            </div>
+            <div class="skills-badges">
+              <span class="tech-badge"><i class="fa-solid fa-brain"></i> Pinecone (Vector DB)</span>
+              <span class="tech-badge"><i class="fa-solid fa-magnifying-glass-chart"></i> RAG Architectures</span>
+              <span class="tech-badge"><i class="fa-solid fa-table-cells"></i> Pandas & NumPy</span>
+              <span class="tech-badge"><i class="fa-solid fa-spider"></i> Beautiful Soup</span>
+              <span class="tech-badge"><i class="fa-solid fa-key"></i> JWT & OAuth2</span>
+              <span class="tech-badge"><i class="fa-solid fa-user-shield"></i> 4-Tier RBAC</span>
+            </div>
+          </div>
+
+          <!-- Frontend & UI Integration -->
+          <div class="skill-category-card full-width-card" data-tilt>
+            <div class="category-header">
+              <div class="category-icon icon-amber"><i class="fa-brands fa-js"></i></div>
+              <h3>Frontend & Document Engineering</h3>
+            </div>
+            <div class="skills-badges">
+              <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</span>
+              <span class="tech-badge"><i class="fa-solid fa-rotate"></i> AJAX</span>
+              <span class="tech-badge"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+              <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+              <span class="tech-badge"><i class="fa-solid fa-file-word"></i> python-docx & docxcompose</span>
+              <span class="tech-badge"><i class="fa-solid fa-file-excel"></i> Bulk Excel (5k+ rows)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-rocket"></i> Portfolio</span>
+          <h2 class="section-title">Production <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real-world systems, GIS dashboards, and AI services deployed for enterprise impact
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Systems <span class="filter-count">9</span></button>
+          <button class="filter-btn" data-filter="opensource">Open Source & Personal <span class="filter-count">4</span></button>
+          <button class="filter-btn" data-filter="enterprise">HR & Automation <span class="filter-count">3</span></button>
+          <button class="filter-btn" data-filter="gis">GIS & Infrastructure <span class="filter-count">2</span></button>
+          <button class="filter-btn" data-filter="ai">AI & Healthcare <span class="filter-count">2</span></button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: HR Letter Automation -->
+          <article class="project-card" data-category="enterprise">
+            <div class="project-banner banner-hr">
+              <div class="project-badge">Enterprise Platform</div>
+              <div class="banner-icon"><i class="fa-solid fa-file-invoice"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="org-tag"><i class="fa-solid fa-building"></i> SRA OSS India</span>
+                <span class="date-tag">Feb 2025 – Nov 2025</span>
+              </div>
+              <h3 class="project-title">Employee Letter Templates Automation System</h3>
+              
+              <div class="project-impact">
+                <i class="fa-solid fa-bolt"></i> <span><strong>75%</strong> Manual HR Workload Reduced</span>
+              </div>
+
+              <div class="primary-stack-chips">
+                <span>Django</span>
+                <span>DRF</span>
+                <span>PostgreSQL</span>
+                <span>Celery</span>
+              </div>
+
+              <div class="card-expand-cue">
+                <span class="cue-text">Hover or tap for details</span>
+                <i class="fa-solid fa-chevron-down cue-icon"></i>
+              </div>
+
+              <div class="project-expandable">
+                <div class="project-expandable-content">
+                  <p class="project-description">
+                    Architected an end-to-end digital HR platform from scratch, automating the creation, revision, and
+                    tracking of 60+ letter categories (Offer, Appointment, Transfer, Notice) for 200+ employees.
+                  </p>
+                  <ul class="project-highlights">
+                    <li><i class="fa-solid fa-check"></i> Slashed manual HR workload by <strong>75%</strong> with zero manual paper creation.</li>
+                    <li><i class="fa-solid fa-check"></i> Engineered dynamic conditional Django forms with 15+ threshold salary computation rules.</li>
+                    <li><i class="fa-solid fa-check"></i> Designed secure role-based dashboards for Admin, HR, and Staff personas.</li>
+                  </ul>
+                  <div class="tech-stack-tags">
+                    <span>Django</span>
+                    <span>DRF</span>
+                    <span>PostgreSQL</span>
+                    <span>Celery</span>
+                    <span>Redis</span>
+                    <span>python-docx</span>
+                    <span>JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Telangana Roads Development Program -->
+          <article class="project-card" data-category="gis">
+            <div class="project-banner banner-roads">
+              <div class="project-badge">GIS & Public Sector</div>
+              <div class="banner-icon"><i class="fa-solid fa-road"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="org-tag"><i class="fa-solid fa-building"></i> SRA OSS India</span>
+                <span class="date-tag">Apr 2025 – Aug 2025</span>
+              </div>
+              <h3 class="project-title">Telangana Roads Development Program</h3>
+
+              <div class="project-impact">
+                <i class="fa-solid fa-bolt"></i> <span><strong>70%</strong> Faster Cost Estimation • 10k+ Roads</span>
+              </div>
+
+              <div class="primary-stack-chips">
+                <span>GeoDjango</span>
+                <span>PostGIS</span>
+                <span>LeafletJS</span>
+                <span>Docker</span>
+              </div>
+
+              <div class="card-expand-cue">
+                <span class="cue-text">Hover or tap for details</span>
+                <i class="fa-solid fa-chevron-down cue-icon"></i>
+              </div>
+
+              <div class="project-expandable">
+                <div class="project-expandable-content">
+                  <p class="project-description">
+                    Delivered enterprise GIS dashboard modules enabling real-time spatial road inventory visualization
+                    and data governance across all 33 districts and 10,000+ road infrastructure records.
+                  </p>
+                  <ul class="project-highlights">
+                    <li><i class="fa-solid fa-check"></i> Cut manual cost estimation time by <strong>70%</strong> using automated survey workflows.</li>
+                    <li><i class="fa-solid fa-check"></i> Accelerated data retrieval speed by <strong>60%</strong> with server-side spatial filtering.</li>
+                    <li><i class="fa-solid fa-check"></i> Streamlined bulk Excel export throughput by <strong>3x</strong> via Celery and Redis.</li>
+                  </ul>
+                  <div class="tech-stack-tags">
+                    <span>Python</span>
+                    <span>GeoDjango</span>
+                    <span>PostGIS</span>
+                    <span>LeafletJS</span>
+                    <span>Celery</span>
+                    <span>Docker</span>
+                    <span>Pandas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: AI Cardiovascular Health App -->
+          <article class="project-card" data-category="ai">
+            <div class="project-banner banner-health">
+              <div class="project-badge">AI & Healthcare</div>
+              <div class="banner-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="org-tag"><i class="fa-solid fa-building"></i> Centrix Healthcare</span>
+                <span class="date-tag">Feb 2024 – Aug 2024</span>
+              </div>
+              <h3 class="project-title">AI-Powered Cardiovascular Health Application</h3>
+
+              <div class="project-impact">
+                <i class="fa-solid fa-bolt"></i> <span><strong>80%</strong> User Uplift • RAG & Pinecone</span>
+              </div>
+
+              <div class="primary-stack-chips">
+                <span>Django</span>
+                <span>RAG</span>
+                <span>Pinecone</span>
+                <span>AWS Polly</span>
+              </div>
+
+              <div class="card-expand-cue">
+                <span class="cue-text">Hover or tap for details</span>
+                <i class="fa-solid fa-chevron-down cue-icon"></i>
+              </div>
+
+              <div class="project-expandable">
+                <div class="project-expandable-content">
+                  <p class="project-description">
+                    Spearheaded a modern medical health application utilizing Retrieval-Augmented Generation (RAG)
+                    and Pinecone vector database to provide tailored cardiac health insights and high accessibility.
+                  </p>
+                  <ul class="project-highlights">
+                    <li><i class="fa-solid fa-check"></i> Drove an <strong>80% uplift</strong> in user engagement within 3 months of launch.</li>
+                    <li><i class="fa-solid fa-check"></i> Integrated AWS Polly text-to-speech for seamless accessibility serving 5,000+ users.</li>
+                    <li><i class="fa-solid fa-check"></i> Automated ETL web scraping pipeline extracting medical content from 20+ sources.</li>
+                  </ul>
+                  <div class="tech-stack-tags">
+                    <span>Django</span>
+                    <span>Flask</span>
+                    <span>RAG</span>
+                    <span>Pinecone</span>
+                    <span>AWS Polly</span>
+                    <span>BeautifulSoup</span>
+                    <span>PostgreSQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Indian Bridge Management System -->
+          <article class="project-card" data-category="gis">
+            <div class="project-banner banner-bridge">
+              <div class="project-badge">National Infrastructure</div>
+              <div class="banner-icon"><i class="fa-solid fa-archway"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="org-tag"><i class="fa-solid fa-building"></i> SRA OSS India</span>
+                <span class="date-tag">Feb 2025 – Apr 2025</span>
+              </div>
+              <h3 class="project-title">Indian Bridge Management System</h3>
+
+              <div class="project-impact">
+                <i class="fa-solid fa-bolt"></i> <span><strong>500+</strong> Bridge Assets Monitored Live</span>
+              </div>
+
+              <div class="primary-stack-chips">
+                <span>Django</span>
+                <span>DRF-GIS</span>
+                <span>LeafletJS</span>
+                <span>QGIS</span>
+              </div>
+
+              <div class="card-expand-cue">
+                <span class="cue-text">Hover or tap for details</span>
+                <i class="fa-solid fa-chevron-down cue-icon"></i>
+              </div>
+
+              <div class="project-expandable">
+                <div class="project-expandable-content">
+                  <p class="project-description">
+                    Customized RESTful GIS APIs to centralize monitoring of bridge inventory, geometry, and inspection
+                    data for a national-level infrastructure system.
+                  </p>
+                  <ul class="project-highlights">
+                    <li><i class="fa-solid fa-check"></i> Integrated interactive map visualization serving geospatial data for 500+ bridge assets.</li>
+                    <li><i class="fa-solid fa-check"></i> Built high-efficiency spatial querying endpoints with djangorestframework-gis and Leaflet.</li>
+                  </ul>
+                  <div class="tech-stack-tags">
+                    <span>Django</span>
+                    <span>DRF</span>
+                    <span>djangorestframework-gis</span>
+                    <span>LeafletJS</span>
+                    <span>QGIS</span>
+                    <span>Docker</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: E-Commerce & Employee Management System -->
+          <article class="project-card" data-category="enterprise">
+            <div class="project-banner banner-ecom">
+              <div class="project-badge">Web Platform</div>
+              <div class="banner-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="org-tag"><i class="fa-solid fa-building"></i> E-Systems AI</span>
+                <span class="date-tag">Aug 2022 – Jan 2024</span>
+              </div>
+              <h3 class="project-title">E-Commerce & Workforce Management Platform</h3>
+
+              <div class="project-impact">
+                <i class="fa-solid fa-bolt"></i> <span><strong>25%</strong> Faster APIs • <strong>35%</strong> Fewer Vulnerabilities</span>
+              </div>
+
+              <div class="primary-stack-chips">
+                <span>Python</span>
+                <span>Django</span>
+                <span>PostgreSQL</span>
+                <span>JWT Auth</span>
+              </div>
+
+              <div class="card-expand-cue">
+                <span class="cue-text">Hover or tap for details</span>
+                <i class="fa-solid fa-chevron-down cue-icon"></i>
+              </div>
+
+              <div class="project-expandable">
+                <div class="project-expandable-content">
+                  <p class="project-description">
+                    Delivered core business logic and RESTful endpoints for an enterprise platform serving 1,000+ active
+                    users, focusing on database optimization and transactional safety.
+                  </p>
+                  <ul class="project-highlights">
+                    <li><i class="fa-solid fa-check"></i> Reduced reported vulnerability incidents by <strong>35%</strong> using JWT token authentication.</li>
+                    <li><i class="fa-solid fa-check"></i> Achieved a <strong>25% reduction</strong> in average API response time via database query indexing.</li>
+                  </ul>
+                  <div class="tech-stack-tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>Flask</span>
+                    <span>PostgreSQL</span>
+                    <span>JWT Auth</span>
+                    <span>Bootstrap</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Brahmo Compliance -->
+          <article class="project-card" data-category="opensource ai">
+            <div class="project-banner banner-health">
+              <div class="project-badge">Open Source / Legal AI</div>
+              <div class="banner-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="org-tag"><i class="fa-brands fa-github"></i> Personal Project</span>
+                <a href="https://github.com/Shamitha-yangala/Brahmo_Compliance" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+              <h3 class="project-title">Brahmo Compliance: Legal AI Auditing & Ethical Wall Engine</h3>
+
+              <div class="project-impact">
+                <i class="fa-solid fa-bolt"></i> <span><strong>SRA Compliant</strong> • Database-Layer Ethical Walls</span>
+              </div>
+
+              <div class="primary-stack-chips">
+                <span>DRF</span>
+                <span>PostgreSQL</span>
+                <span>Next.js 19</span>
+                <span>Audit Trails</span>
+              </div>
+
+              <div class="card-expand-cue">
+                <span class="cue-text">Hover or tap for details</span>
+                <i class="fa-solid fa-chevron-down cue-icon"></i>
+              </div>
+
+              <div class="project-expandable">
+                <div class="project-expandable-content">
+                  <p class="project-description">
+                    High-security compliance engine & auditing workstation enforcing strict Ethical Walls (data isolation
+                    between client matters) at the database layer with tamper-proof audit trails.
+                  </p>
+                  <ul class="project-highlights">
+                    <li><i class="fa-solid fa-check"></i> Engineered multi-tenant ethical walls preventing information contamination across matters.</li>
+                    <li><i class="fa-solid fa-check"></i> Implemented full audit logging compliant with regulatory and legal guidelines (e.g., SRA).</li>
+                  </ul>
+                  <div class="tech-stack-tags">
+                    <span>Django REST Framework</span>
+                    <span>Python</span>
+                    <span>PostgreSQL</span>
+                    <span>Next.js / React 19</span>
+                    <span>Audit Trails</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: Shopify Data Ingestion -->
+          <article class="project-card" data-category="opensource enterprise">
+            <div class="project-banner banner-ecom">
+              <div class="project-badge">Open Source / E-Commerce</div>
+              <div class="banner-icon"><i class="fa-brands fa-shopify"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="org-tag"><i class="fa-brands fa-github"></i> Personal Project</span>
+                <a href="https://github.com/Shamitha-yangala/data_fetch_shopify" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+              <h3 class="project-title">Shopify Data Fetcher & Ingestion Pipeline</h3>
+
+              <div class="project-impact">
+                <i class="fa-solid fa-bolt"></i> <span>Automated E-Commerce Catalog & Order Ingestion</span>
+              </div>
+
+              <div class="primary-stack-chips">
+                <span>Python</span>
+                <span>Shopify API</span>
+                <span>REST API</span>
+                <span>ETL</span>
+              </div>
+
+              <div class="card-expand-cue">
+                <span class="cue-text">Hover or tap for details</span>
+                <i class="fa-solid fa-chevron-down cue-icon"></i>
+              </div>
+
+              <div class="project-expandable">
+                <div class="project-expandable-content">
+                  <p class="project-description">
+                    Automated API pipeline connecting with Shopify store endpoints to extract products, inventory levels,
+                    and transaction records for analytics and reporting.
+                  </p>
+                  <ul class="project-highlights">
+                    <li><i class="fa-solid fa-check"></i> Built robust rate-limited REST integration fetching paginated e-commerce datasets.</li>
+                    <li><i class="fa-solid fa-check"></i> Structured JSON payloads into relational data schemas for reporting.</li>
+                  </ul>
+                  <div class="tech-stack-tags">
+                    <span>Python</span>
+                    <span>REST API</span>
+                    <span>Shopify API</span>
+                    <span>ETL Pipeline</span>
+                    <span>JSON</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8: AWS Polly Text to Speech -->
+          <article class="project-card" data-category="opensource ai">
+            <div class="project-banner banner-roads">
+              <div class="project-badge">Open Source / Cloud Audio</div>
+              <div class="banner-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="org-tag"><i class="fa-brands fa-github"></i> Personal Project</span>
+                <a href="https://github.com/Shamitha-yangala/documnet_to_audio_conversion_polly" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+              <h3 class="project-title">Document & PPT Note to Audio Conversion Suite</h3>
+
+              <div class="project-impact">
+                <i class="fa-solid fa-bolt"></i> <span>Automated Slide Notes Neural Voice Streaming</span>
+              </div>
+
+              <div class="primary-stack-chips">
+                <span>Python</span>
+                <span>AWS Polly</span>
+                <span>Boto3</span>
+                <span>python-pptx</span>
+              </div>
+
+              <div class="card-expand-cue">
+                <span class="cue-text">Hover or tap for details</span>
+                <i class="fa-solid fa-chevron-down cue-icon"></i>
+              </div>
+
+              <div class="project-expandable">
+                <div class="project-expandable-content">
+                  <p class="project-description">
+                    Speech generation engine integrating AWS Polly to convert presentation slide notes and unstructured
+                    documents into lifelike synthetic audio streams.
+                  </p>
+                  <ul class="project-highlights">
+                    <li><i class="fa-solid fa-check"></i> Integrated AWS Boto3 SDK with Polly for neural text-to-speech audio streaming.</li>
+                    <li><i class="fa-solid fa-check"></i> Automates extraction of slide speaker notes and formats them for narration.</li>
+                  </ul>
+                  <div class="tech-stack-tags">
+                    <span>Python</span>
+                    <span>AWS Polly</span>
+                    <span>Boto3</span>
+                    <span>python-pptx</span>
+                    <span>Audio Processing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 9: PDF to Excel Converter -->
+          <article class="project-card" data-category="opensource enterprise">
+            <div class="project-banner banner-hr">
+              <div class="project-badge">Open Source / Document Automation</div>
+              <div class="banner-icon"><i class="fa-solid fa-file-excel"></i></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="org-tag"><i class="fa-brands fa-github"></i> Personal Project</span>
+                <a href="https://github.com/Shamitha-yangala/pdf_to_excel" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+              <h3 class="project-title">Restaurant Menu PDF to Excel Converter</h3>
+
+              <div class="project-impact">
+                <i class="fa-solid fa-bolt"></i> <span>Unstructured PDF to Tabular Digitization</span>
+              </div>
+
+              <div class="primary-stack-chips">
+                <span>Django</span>
+                <span>Python</span>
+                <span>PDF Parsing</span>
+                <span>openpyxl</span>
+              </div>
+
+              <div class="card-expand-cue">
+                <span class="cue-text">Hover or tap for details</span>
+                <i class="fa-solid fa-chevron-down cue-icon"></i>
+              </div>
+
+              <div class="project-expandable">
+                <div class="project-expandable-content">
+                  <p class="project-description">
+                    Django web tool enabling businesses to digitize PDF menus and catalogs by extracting titles, items,
+                    descriptions, and pricing into clean Excel spreadsheets.
+                  </p>
+                  <ul class="project-highlights">
+                    <li><i class="fa-solid fa-check"></i> Developed web-based document upload and automated parsing interface.</li>
+                    <li><i class="fa-solid fa-check"></i> Generates styled Excel files ready for inventory and accounting imports.</li>
+                  </ul>
+                  <div class="tech-stack-tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>PDF Parsing</span>
+                    <span>openpyxl</span>
+                    <span>Excel Automation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE TIMELINE -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-timeline"></i> Career Journey</span>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle">2.9+ years of engineering production backend solutions</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience 1 -->
+          <div class="timeline-item" data-tilt>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Python Full Stack Developer</h3>
+                  <h4 class="company-name"><i class="fa-solid fa-building"></i> SRA OSS India Pvt. Ltd</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="badge-pill"><i class="fa-regular fa-calendar"></i> Feb 2025 – Nov 2025</span>
+                  <span class="badge-pill"><i class="fa-solid fa-location-dot"></i> Hyderabad, India</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li><strong>HR Platform:</strong> Architected internal letter generator from scratch for 200+ staff,
+                  saving 75% manual overhead.</li>
+                <li><strong>Telangana Roads GIS:</strong> Built spatial analytics modules for 33 districts and 10,000+
+                  records, cutting cost estimation time by 70%.</li>
+                <li><strong>Indian Bridge Management:</strong> Built GIS REST APIs and Leaflet visualization for 500+
+                  bridge assets.</li>
+                <li><strong>High Reliability:</strong> Implemented Celery worker queues, Redis caching, and Simple
+                  History audit trails.</li>
+              </ul>
+              <div class="tech-mini-chips">
+                <span>Django</span><span>GeoDjango</span><span>PostgreSQL</span><span>PostGIS</span><span>Celery</span><span>Redis</span><span>Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item" data-tilt>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Python Developer (Remote)</h3>
+                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Centrix Healthcare Limited</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="badge-pill"><i class="fa-regular fa-calendar"></i> Feb 2024 – Aug 2024</span>
+                  <span class="badge-pill"><i class="fa-solid fa-location-dot"></i> Mumbai, India</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li><strong>AI-Powered Healthcare:</strong> Spearheaded RAG architecture using Pinecone vector database,
+                  driving an 80% user engagement uplift.</li>
+                <li><strong>Accessibility:</strong> Integrated AWS Polly text-to-speech to serve 5,000+ active
+                  cardiovascular patients.</li>
+                <li><strong>Data Extraction:</strong> Developed web scraping engine with BeautifulSoup extracting
+                  clinical insights from 20+ sources.</li>
+              </ul>
+              <div class="tech-mini-chips">
+                <span>Django</span><span>Flask</span><span>Pinecone</span><span>RAG</span><span>AWS
+                  Polly</span><span>BeautifulSoup</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-item" data-tilt>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Junior Full Stack Developer</h3>
+                  <h4 class="company-name"><i class="fa-solid fa-building"></i> E-Systems AI Tech Solutions</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="badge-pill"><i class="fa-regular fa-calendar"></i> Aug 2022 – Jan 2024</span>
+                  <span class="badge-pill"><i class="fa-solid fa-location-dot"></i> Hyderabad, India</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li><strong>Core Web Engineering:</strong> Developed business logic for E-Commerce and Employee systems
+                  supporting 1,000+ active users.</li>
+                <li><strong>Security Hardening:</strong> Introduced JWT token authentication and input sanitization,
+                  reducing vulnerabilities by 35%.</li>
+                <li><strong>Query Tuning:</strong> Optimized database indexes and query filters, accelerating API
+                  response times by 25%.</li>
+              </ul>
+              <div class="tech-mini-chips">
+                <span>Python</span><span>Django</span><span>Flask</span><span>PostgreSQL</span><span>JWT</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academics</span>
+          <h2 class="section-title">Education <span class="gradient-text">& Credentials</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-grid">
+          <div class="education-card glass-card" data-tilt>
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="edu-details">
+              <span class="edu-period">Aug 2017 – May 2020</span>
+              <h3 class="edu-degree">B.Tech in Computer Science Engineering</h3>
+              <h4 class="edu-institute">V.R. Siddhartha Engineering College</h4>
+              <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Vijayawada, Andhra Pradesh</p>
+              <p class="edu-note">Comprehensive study in computer science fundamentals, data structures, algorithms,
+                database management, and software architecture.</p>
+            </div>
+          </div>
+
+          <div class="education-card glass-card" data-tilt>
+            <div class="edu-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="edu-details">
+              <span class="edu-period">Jun 2014 – May 2017</span>
+              <h3 class="edu-degree">Diploma in Computer Science</h3>
+              <h4 class="edu-institute">A.N.M V.V.R.S.R Polytechnic</h4>
+              <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Gudlavalleru, Andhra Pradesh</p>
+              <p class="edu-note">Hands-on technical foundation in computer programming, operating systems, networking,
+                and applied computing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-regular fa-paper-plane"></i> Get In Touch</span>
+          <h2 class="section-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+          <p class="section-subtitle">Open to backend engineering roles, technical consulting, and exciting collaborations.<br>Pick your preferred channel — I respond within 24 hours.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Availability Badge -->
+        <div class="availability-badge">
+          <span class="avail-dot"></span>
+          <span>Available for New Opportunities &amp; Freelance Projects</span>
+        </div>
+
+        <!-- Channel Cards Grid -->
+        <div class="contact-channels-grid">
+
+          <!-- Email -->
+          <a href="mailto:shamitharaj64@gmail.com" class="channel-card glass-card" id="ch-email">
+            <div class="ch-icon ch-email-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="ch-body">
+              <span class="ch-label">Email Me</span>
+              <span class="ch-value">shamitharaj64@gmail.com</span>
+              <span class="ch-hint">Opens your mail client instantly</span>
+            </div>
+            <div class="ch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <!-- Phone / WhatsApp -->
+          <div class="channel-card glass-card channel-card--phone" id="ch-phone">
+            <a href="tel:+917989478399" class="ch-phone-link" aria-label="Call +91 7989 478 399">
+              <div class="ch-icon ch-phone-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="ch-body">
+                <span class="ch-label">Call / WhatsApp</span>
+                <span class="ch-value">+91 7989 478 399</span>
+                <span class="ch-hint">Mon – Sat, 9 AM – 7 PM IST</span>
+              </div>
+              <div class="ch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            </a>
+            <button class="ch-copy-btn copy-btn" data-clipboard="+917989478399" title="Copy phone number" aria-label="Copy phone number">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/shamitha-yangala" target="_blank" rel="noopener noreferrer" class="channel-card glass-card" id="ch-linkedin">
+            <div class="ch-icon ch-linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="ch-body">
+              <span class="ch-label">LinkedIn</span>
+              <span class="ch-value">shamitha-yangala</span>
+              <span class="ch-hint">DM me for quick responses</span>
+            </div>
+            <div class="ch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/Shamitha-yangala" target="_blank" rel="noopener noreferrer" class="channel-card glass-card" id="ch-github">
+            <div class="ch-icon ch-github-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="ch-body">
+              <span class="ch-label">GitHub</span>
+              <span class="ch-value">Shamitha-yangala</span>
+              <span class="ch-hint">Explore my open-source work</span>
+            </div>
+            <div class="ch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <!-- Location -->
+          <div class="channel-card glass-card channel-card--static" id="ch-location">
+            <div class="ch-icon ch-location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="ch-body">
+              <span class="ch-label">Based In</span>
+              <span class="ch-value">Hyderabad, Telangana</span>
+              <span class="ch-hint">India · Open to remote &amp; relocation</span>
+            </div>
+          </div>
+
+          <!-- Download CV -->
+          <a href="Shamitha_Yangala_Python_Developer_Resume_2026.pdf" download class="channel-card glass-card channel-card--cta" id="ch-cv">
+            <div class="ch-icon ch-cv-icon"><i class="fa-solid fa-file-pdf"></i></div>
+            <div class="ch-body">
+              <span class="ch-label">Download CV</span>
+              <span class="ch-value">Python Developer Resume</span>
+              <span class="ch-hint">PDF · Updated 2026</span>
+            </div>
+            <div class="ch-arrow"><i class="fa-solid fa-download"></i></div>
+          </a>
+
+        </div><!-- /.contact-channels-grid -->
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+
+    <!-- Footer Top: Brand + Nav + Contact -->
+    <div class="footer-top">
+      <div class="container footer-top-inner">
+
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-name">Shamitha Yangala</span>
+            <span class="logo-slash">/</span>
+            <span class="logo-bracket">&gt;</span>
+          </a>
+          <p class="footer-tagline">Python Backend Developer &mdash; building scalable APIs, GIS systems &amp; AI-powered solutions that ship.</p>
+          <div class="footer-social-row">
+            <a href="https://github.com/Shamitha-yangala" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social-btn">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/shamitha-yangala" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-btn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:shamitharaj64@gmail.com" aria-label="Email" class="footer-social-btn">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+917989478399" aria-label="Phone" class="footer-social-btn">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Navigation Column -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+            <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact Column -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Direct Contact</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <a href="mailto:shamitharaj64@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>shamitharaj64@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+917989478399">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 7989 478 399</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/shamitha-yangala" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>linkedin.com/in/shamitha-yangala</span>
+              </a>
+            </li>
+            <li class="footer-location">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Hyderabad, Telangana, India</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">&copy; 2026 Shamitha Yangala &mdash; Designed &amp; Engineered for Excellence.</p>
+        <p class="footer-made">Built with <i class="fa-solid fa-heart" style="color:#f472b6"></i> &amp; Python passion</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
