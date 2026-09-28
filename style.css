@@ -1491,6 +1491,7 @@ strong { font-weight: 700; }
 .channel-card--cta {
   border-color: rgba(139,92,246,0.3);
   background: rgba(139,92,246,0.06);
+  grid-column: span 2;
 }
 
 .channel-card--cta:hover {
@@ -1883,6 +1884,7 @@ strong { font-weight: 700; }
   .skills-categories-grid { grid-template-columns: 1fr; }
   .education-grid      { grid-template-columns: 1fr; }
   .contact-channels-grid { grid-template-columns: repeat(2, 1fr); }
+  .channel-card--cta   { grid-column: 1 / -1; }
   .footer-top-inner    { grid-template-columns: 1fr 1fr; }
   .footer-brand        { grid-column: 1 / -1; }
   .timeline            { padding-left: 2rem; }
@@ -2058,6 +2060,7 @@ strong { font-weight: 700; }
   .btn             { padding: 0.65rem 1.1rem; font-size: 0.875rem; }
 
   .contact-channels-grid { grid-template-columns: 1fr; }
+  .channel-card--cta   { grid-column: auto; }
   .footer-top-inner      { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom-inner   { flex-direction: column; text-align: center; gap: 0.25rem; }
 }
